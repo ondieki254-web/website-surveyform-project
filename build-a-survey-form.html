@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out the survey below to help us improve our service!</p>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" id="number" placeholder="Enter your age" min="18" max="100" required />
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">Choose a survey option</label>
+                <select id="dropdown" required>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required />
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Preferred Contact Method</label>
+                <div>
+                    <input type="checkbox" id="email-contact" name="contact" value="email" />
+                    <label for="email-contact">Email</label>
+                    <input type="checkbox" id="phone-contact" name="contact" value="phone" />
+                    <label for="phone-contact">Phone</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" rows="4" placeholder="Enter any additional comments here"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
